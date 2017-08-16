@@ -49,4 +49,5 @@ end
   gem 'twitter-bootstrap-rails'
   gem 'less-rails'
   gem 'cancancan'
+  gem 'devise-bootstrap-views'
   
