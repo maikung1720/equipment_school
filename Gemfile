@@ -48,4 +48,5 @@ end
   gem 'annotate'
   gem 'twitter-bootstrap-rails'
   gem 'less-rails'
+  gem 'cancancan'
   
