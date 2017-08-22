@@ -1,7 +1,7 @@
 <h1>Labware List</h1>
-
+<% if can? :create, Labware %>
 <%=link_to "Add", new_labware_path, :class=> "btn btn-primary" %><br>
-
+<>
 <hr>
 
 <% if @labwares.any? %>
@@ -20,8 +20,12 @@
    <td width=''230'' align= "center">
        <div class="btn-group">
       <%= link_to 'Show', labware_path(l.id), class: "btn btn-info" %>
+      <% if can? :update, Labware %>
       <%= link_to 'Edit', edit_labware_path(l.id), class: "btn btn-success" %>
+      <% end %>
+      <% if can? :destroy, Labware %>
       <%= link_to 'Destroy', labware_path(l.id), method: :delete, data: { confirm: "Are you sure to delete？" }, :class => "btn btn-danger" %>
+      <% end %>
       </div>
      </td>
      </tr>
