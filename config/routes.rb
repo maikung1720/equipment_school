@@ -1,6 +1,15 @@
 # == Route Map
 #
 #                   Prefix Verb   URI Pattern                    Controller#Action
+#            labware_index GET    /labware(.:format)             labware#index
+#                          POST   /labware(.:format)             labware#create
+#              new_labware GET    /labware/new(.:format)         labware#new
+#             edit_labware GET    /labware/:id/edit(.:format)    labware#edit
+#                  labware GET    /labware/:id(.:format)         labware#show
+#                          PATCH  /labware/:id(.:format)         labware#update
+#                          PUT    /labware/:id(.:format)         labware#update
+#                          DELETE /labware/:id(.:format)         labware#destroy
+#                     root GET    /                              menu#index
 #         new_user_session GET    /users/sign_in(.:format)       devise/sessions#new
 #             user_session POST   /users/sign_in(.:format)       devise/sessions#create
 #     destroy_user_session DELETE /users/sign_out(.:format)      devise/sessions#destroy
@@ -19,6 +28,10 @@
 # 
 
 Rails.application.routes.draw do
+  get 'labwares/index'
+
+  resources :labwares
+
   root 'menu#index'
 
   devise_for :users

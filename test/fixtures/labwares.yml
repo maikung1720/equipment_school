@@ -1,0 +1,26 @@
+# == Schema Information
+#
+# Table name: labwares
+#
+#  id         :integer          not null, primary key
+#  name       :string
+#  rest       :integer
+#  loan       :integer
+#  group      :string
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  rest: 1
+  loan: 1
+  group: MyString
+
+two:
+  name: MyString
+  rest: 1
+  loan: 1
+  group: MyString

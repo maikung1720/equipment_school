@@ -1,0 +1,7 @@
+<%= bootstrap_form_for(@labware) do |f| %>
+    <%= f.text_field :name %>   
+<%= f.number_field :rest %>
+<%= f.number_field :loan %>
+<%= f.text_field :group %>
+<%= f.primary "OK" %>
+<% end %>
