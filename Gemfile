@@ -51,5 +51,6 @@ end
   gem 'cancancan'
   gem 'devise-bootstrap-views'
   gem 'bootstrap_form', '~> 2.3'
+  gem 'cocoon'
   
   
