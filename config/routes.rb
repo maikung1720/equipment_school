@@ -28,8 +28,8 @@
 # 
 
 Rails.application.routes.draw do
-  get 'labwares/index'
 
+  resources :rentals
   resources :labwares
 
   root 'menu#index'

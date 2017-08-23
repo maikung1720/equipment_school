@@ -1,0 +1,11 @@
+<% if data == "application" %>
+<span class="text-warning test-center"><%= data%></span>
+<% elsif data == "approval" %>
+<span class="text-primary test-center"><%= data%></span>
+<% elsif data == "reject" %>
+<span class="text-danger test-center"><%= data%></span>
+<% elsif data == "lending" %>
+<span class="text-success test-center"><%= data%></span>
+<% elsif data == "returned" %>
+<span class="text-muted test-center"><%= data%></span>
+<% end %>

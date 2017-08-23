@@ -26,4 +26,6 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
          
   enum role: {admin: 'admin', teacher: 'teacher', student: 'student'}
+  
+  has_many :rentals
 end
